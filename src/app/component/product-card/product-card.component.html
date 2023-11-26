@@ -1,0 +1,18 @@
+
+<div class="card" [style]="{ width: '252px',  border: '1px solid gray' }">
+    <p-card header="Product name" subheader="Description" [style]="{ width: '250px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+        </ng-template>
+        
+        <ng-template pTemplate="footer">
+            <div class="card flex flex-wrap flex-row" [style]="{ border: 'none' }" >
+            <p-button label="Add to Cart" [rounded]="true" 
+            [style]="{ 'color': 'white','background-color':'black','border':'1px solid black' }"></p-button>
+            <p-button class="ml-4" icon="pi pi-heart" [rounded]="true" severity="success" 
+            [style]="{ 'color': 'white','background-color':'black' ,'border':'1px solid black'}"></p-button>
+            <!-- <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button> -->
+        </div>
+        </ng-template>
+    </p-card>
+</div>
