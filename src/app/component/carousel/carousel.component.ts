@@ -13,33 +13,33 @@ export class CarouselComponent {
   images: any[] = [ 
       { 
           previewImageSrc: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210203171024/CSSTutorial.png', 
+          'assets/banners/daraz.jpg', 
           thumbnailImageSrc: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210203171024/CSSTutorial.png', 
+          'assets/banners/banner1.jpg',
           alt: 'Cascading Style Sheet', 
           title: 'CSS'
       }, 
       { 
           previewImageSrc: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210322182256/AngularJS-Tutorial.png', 
+          'assets/banners/daraz1.jpg',
           thumbnailImageSrc: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210322182256/AngularJS-Tutorial.png', 
+          'assets/banners/banner2.jpg',
           alt: 'Angular for Front end', 
           title: 'Angular'
       }, 
       { 
           previewImageSrc: 
-              'https://media.geeksforgeeks.org/wp-content/cdn-uploads/Java.png', 
+          'assets/banners/daraz3.jpg',
           thumbnailImageSrc: 
-              'https://media.geeksforgeeks.org/wp-content/cdn-uploads/Java.png', 
+          'assets/banners/banner3.jpg',
           alt: 'Java Programming Language', 
           title: 'Java'
       }, 
       { 
           previewImageSrc: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png', 
+          'assets/banners/daraz.jpg',
           thumbnailImageSrc: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png', 
+          'assets/banners/banner4.jpg',
           alt: 'HyperText Markup Language', 
           title: 'HTML'
       }, 

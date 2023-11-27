@@ -20,7 +20,7 @@ import { ProductListComponent } from './component/product-list/product-list.comp
 import { ProductCardComponent } from './component/product-card/product-card.component';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-
+import {StyleClassModule} from 'primeng/styleclass';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -45,7 +45,8 @@ import { CardModule } from 'primeng/card';
     AppRoutingModule,
     CarouselModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    StyleClassModule
   ],
   providers: [],
   bootstrap: [AppComponent]

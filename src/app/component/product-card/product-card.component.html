@@ -1,10 +1,13 @@
 
-<div class="card" [style]="{ width: '252px',  border: '1px solid gray' }">
-    <p-card header="Product name" subheader="Description" [style]="{ width: '250px' }">
+<div class="card" [style]="{ width: '250px'}">
+    <p-card header="Armani Bag" subheader="Description" [style]="{ width: '250px'  }">
+        <!-- 'border': '1px solid gray' -->
         <ng-template pTemplate="header">
-            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            <img alt="Card" src="../../../assets/product images/product-11.jpg"
+             [style]="{ width: '249px' , 'height':'200px'}" />
+             
         </ng-template>
-        
+        <p [style]="{ color: 'black'}">Price : $200</p>
         <ng-template pTemplate="footer">
             <div class="card flex flex-wrap flex-row" [style]="{ border: 'none' }" >
             <p-button label="Add to Cart" [rounded]="true" 
