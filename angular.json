@@ -111,7 +111,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "primeflex/primeflex.css"
+              "primeflex/primeflex.css",
+              "primeicons/primeicons.css"
             ],
             "scripts": []
           }

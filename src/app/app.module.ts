@@ -20,8 +20,10 @@ import { ProductListComponent } from './component/product-list/product-list.comp
 import { ProductCardComponent } from './component/product-card/product-card.component';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import {StyleClassModule} from 'primeng/styleclass';
-
+import { StyleClassModule } from 'primeng/styleclass';
+import { FooterMainComponent } from './component/footer-main/footer-main.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
+import { InputNumberModule } from 'primeng/inputnumber';
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
@@ -38,7 +40,9 @@ import {StyleClassModule} from 'primeng/styleclass';
     CarouselComponent,
     CategoryListComponent,
     ProductListComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    FooterMainComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,8 @@ import {StyleClassModule} from 'primeng/styleclass';
     CarouselModule,
     ButtonModule,
     CardModule,
-    StyleClassModule
+    StyleClassModule,
+    InputNumberModule
   ],
   providers: [],
   bootstrap: [AppComponent]
