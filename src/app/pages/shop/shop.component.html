@@ -29,26 +29,32 @@
                     <div class="flex h-2rem ml-4 text-secondary font-bold border-round ">Kids</div>
                 </div> -->
             </div>
-            <div class="col-9 ">
-                <div class="flex flex-row  flex-wrap">
-                    <div class="col-4 text-center p-1 border-round  font-bold ">
-                        <p-card header="Armani Shoe" subheader="Description" styleClass="border" [style]="{ width: '315px' }">
+            <div class="col-9">
+                <div class="flex align-items-end justify-content-end mb-4">
+                    <div class="">
+                        <input type="text" pInputText placeholder="Search" class="border-200 h-2rem" />
+                    </div>
+                    
+                </div>
+                <div class="flex flex-row  flex-wrap mt-4" >
+                    <div *ngFor="let product of productList" class="col-4 text-center p-1 border-round  font-bold ">
+                        <p-card header="{{product.name}}"  subheader="" styleClass="border" [style]="{ width: '315px' }">
                             <ng-template pTemplate="header">
                                 <img alt="Card" [style]="{ padding : '5px' }" src="../../../assets/product images/product-3.jpg" height="260px" />
                             </ng-template>
-                            <p class="p-0">
-                                Armani Exchange Shoe
-                            </p>
-                            <p [style]="{ color: 'black'}" class="p-0">Price : $200</p>
+                            <!-- <p class="p-0">
+                                {{product.name}}
+                            </p> -->
+                            <p [style.color]="'blue'" class="p-0">Price : $ {{product.price}}</p>
                             <ng-template pTemplate="footer">
                                 <p-button label="Add to Cart" icon="pi pi-shopping-cart"
                                     styleClass="bg-black-alpha-90 hover:bg-black-alpha-60 border-circle border-black-alpha-90"></p-button>
-                                <p-button label="" icon="pi pi-heart" styleClass="bg-black-alpha-90 border-circle border-none ml-2">
+                                <p-button label="" icon="pi pi-heart" styleClass="bg-black-alpha-90 hover:bg-black-alpha-60 border-circle border-none ml-2">
                                 </p-button>
                             </ng-template>
                         </p-card>
                     </div>
-                    <div class="col-4 text-center p-1 border-round-sm  font-bold ">
+                    <!-- <div class="col-4 text-center p-1 border-round-sm  font-bold ">
                         <p-card header="Armani Bag" subheader="Description" styleClass="border" [style]="{ width: '315px' }">
                             <ng-template pTemplate="header">
                                 <img alt="Card" [style]="{ padding : '5px' }" src="../../../assets/product images/product-7.jpg" height="260px" />
@@ -183,7 +189,7 @@
                                 </p-button>
                             </ng-template>
                         </p-card>
-                    </div>
+                    </div> -->
                 </div>
                 
                 <!-- <div class="col-3">

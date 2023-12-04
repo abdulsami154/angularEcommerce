@@ -24,6 +24,7 @@ import { StyleClassModule } from 'primeng/styleclass';
 import { FooterMainComponent } from './component/footer-main/footer-main.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { InputNumberModule } from 'primeng/inputnumber';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
@@ -51,7 +52,8 @@ import { InputNumberModule } from 'primeng/inputnumber';
     ButtonModule,
     CardModule,
     StyleClassModule,
-    InputNumberModule
+    InputNumberModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
