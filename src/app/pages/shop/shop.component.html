@@ -2,7 +2,13 @@
     <app-header></app-header>
     <div class="container">
         <div class="row">
-            <div class="col-3 pl-4">
+            <div class="flex align-items-end justify-content-end mt-2 mb-3">
+                <div class="">
+                    <input type="text" pInputText placeholder="Search"  class="border-200 h-2rem" (keyup)="getSearchByProduct($event.target)" [(ngModel)]="searchName" />
+                </div>
+                
+            </div>
+            <div class="col-3 pl-4 ">
                 <div class="p-2 text-dark no-underline">
                     <a href="" class="font-bold text-black no-underline">Category</a>
                 </div>
@@ -30,13 +36,8 @@
                 </div> -->
             </div>
             <div class="col-9">
-                <div class="flex align-items-end justify-content-end mb-4">
-                    <div class="">
-                        <input type="text" pInputText placeholder="Search" class="border-200 h-2rem" />
-                    </div>
-                    
-                </div>
-                <div class="flex flex-row  flex-wrap mt-4" >
+               
+                <div class="flex flex-row  flex-wrap " >
                     <div *ngFor="let product of productList" class="col-4 text-center p-1 border-round  font-bold ">
                         <p-card header="{{product.name}}"  subheader="" styleClass="border" [style]="{ width: '315px' }">
                             <ng-template pTemplate="header">

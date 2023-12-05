@@ -25,6 +25,8 @@ import { FooterMainComponent } from './component/footer-main/footer-main.compone
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
@@ -53,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
     CardModule,
     StyleClassModule,
     InputNumberModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
