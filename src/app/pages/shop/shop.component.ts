@@ -26,7 +26,7 @@ searchName: string = '';
       
     })
   }
-
+//aa
   getSearchByProduct(name:any){
     if(this.searchName === ''){
       this.getAllProducts()
